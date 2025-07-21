@@ -26,23 +26,23 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-neutral/90 backdrop-blur-sm">
+    <section id="projects" className="py-20 bg-black/80 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-secondary mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
           <div className="w-24 h-1 gradient-bg mx-auto rounded-full"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
             Here are some of the projects I've worked on, showcasing my expertise in full-stack development
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white/95 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg card-hover border border-gray-100">
+            <div key={index} className="bg-gray-800/90 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg card-hover border border-gray-700">
               <div className={`h-48 bg-gradient-to-br ${project.gradient}`}></div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-secondary mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+                <p className="text-gray-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span key={tech} className={`bg-primary/10 ${project.textColor} px-3 py-1 rounded-full text-sm`}>

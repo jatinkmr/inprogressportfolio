@@ -9,22 +9,22 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-white/90 backdrop-blur-sm pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-black/80 backdrop-blur-sm pt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-6 animate-slide-up">
             <div className="space-y-2">
-              <h1 className="text-5xl lg:text-6xl font-bold text-secondary">
+              <h1 className="text-5xl lg:text-6xl font-bold text-white">
                 Hello, I'm 👋<br />
                 <span className="text-gradient">Jatin Kumar</span>
               </h1>
-              <h2 className="text-2xl lg:text-3xl font-light text-gray-600">
+              <h2 className="text-2xl lg:text-3xl font-light text-gray-300">
                 Full-Stack JavaScript Developer
               </h2>
             </div>
             
-            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
+            <p className="text-lg text-gray-300 leading-relaxed max-w-2xl">
               I craft scalable web applications with 4+ years of hands-on experience across the entire development stack. 
               Previously at FirstCry.com, I build CRM dashboards and integrate frontend interfaces with REST APIs.
             </p>
@@ -53,7 +53,7 @@ export default function HeroSection() {
                 href="https://www.github.com/jatinkmr" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+                className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 text-gray-300"
               >
                 <Github className="w-5 h-5" />
               </a>
@@ -61,13 +61,13 @@ export default function HeroSection() {
                 href="https://www.linkedin.com/in/jatinkumarkamboj/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+                className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 text-gray-300"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
                 href="mailto:kumar.jatin873@gmail.com"
-                className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+                className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 text-gray-300"
               >
                 <Mail className="w-5 h-5" />
               </a>
@@ -75,7 +75,7 @@ export default function HeroSection() {
                 href="https://twitter.com/jatinkrkamboj" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+                className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 text-gray-300"
               >
                 <Twitter className="w-5 h-5" />
               </a>

@@ -55,10 +55,12 @@
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased text-foreground;
+    background: #0a0a0a;
     background-image: url('https://jatinkmr-dev.netlify.app/images/pattern.png');
     background-repeat: repeat;
     background-attachment: fixed;
+    color: #ffffff;
   }
 }
 
@@ -151,8 +153,9 @@
 }
 
 .skill-tag {
-  background: linear-gradient(135deg, hsla(207, 90%, 54%, 0.1) 0%, hsla(184, 100%, 40%, 0.2) 100%);
-  border: 1px solid hsla(207, 90%, 54%, 0.3);
+  background: linear-gradient(135deg, hsla(207, 90%, 54%, 0.2) 0%, hsla(184, 100%, 40%, 0.3) 100%);
+  border: 1px solid hsla(207, 90%, 54%, 0.4);
+  color: #ffffff;
 }
 
 .neutral {

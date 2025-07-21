@@ -56,12 +56,12 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white/95 backdrop-blur-sm">
+    <section id="contact" className="py-20 bg-gray-900/95 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-secondary mb-4">Get In Touch</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
           <div className="w-24 h-1 gradient-bg mx-auto rounded-full"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-300 mt-4 max-w-2xl mx-auto">
             I'm always open to discussing new opportunities, collaborations, or just having a chat about technology
           </p>
         </div>
@@ -70,8 +70,8 @@ export default function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-secondary mb-6">Let's Connect</h3>
-              <p className="text-gray-600 mb-8">
+              <h3 className="text-2xl font-semibold text-white mb-6">Let's Connect</h3>
+              <p className="text-gray-300 mb-8">
                 Whether you have a project in mind, want to discuss opportunities, or just want to say hello, 
                 I'd love to hear from you.
               </p>
@@ -83,7 +83,7 @@ export default function ContactSection() {
                   <Mail className="text-white w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-secondary">Email</h4>
+                  <h4 className="font-medium text-white">Email</h4>
                   <a href="mailto:kumar.jatin873@gmail.com" className="text-primary hover:text-secondary transition-colors">
                     kumar.jatin873@gmail.com
                   </a>
@@ -95,7 +95,7 @@ export default function ContactSection() {
                   <Linkedin className="text-white w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-secondary">LinkedIn</h4>
+                  <h4 className="font-medium text-white">LinkedIn</h4>
                   <a href="https://www.linkedin.com/in/jatinkumarkamboj/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition-colors">
                     /in/jatinkumarkamboj
                   </a>
@@ -107,7 +107,7 @@ export default function ContactSection() {
                   <Github className="text-white w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-secondary">GitHub</h4>
+                  <h4 className="font-medium text-white">GitHub</h4>
                   <a href="https://www.github.com/jatinkmr" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition-colors">
                     github.com/jatinkmr
                   </a>
@@ -117,15 +117,15 @@ export default function ContactSection() {
             
             {/* Social Links */}
             <div className="pt-8">
-              <h4 className="font-medium text-secondary mb-4">Follow Me</h4>
+              <h4 className="font-medium text-white mb-4">Follow Me</h4>
               <div className="flex space-x-4">
-                <a href="https://twitter.com/jatinkrkamboj" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
+                <a href="https://twitter.com/jatinkrkamboj" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 text-gray-300">
                   <Twitter className="w-4 h-4" />
                 </a>
-                <a href="https://www.instagram.com/ijatinkrkamb0j/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
+                <a href="https://www.instagram.com/ijatinkrkamb0j/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 text-gray-300">
                   <Instagram className="w-4 h-4" />
                 </a>
-                <a href="https://www.facebook.com/jatin.kamboj.37" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300">
+                <a href="https://www.facebook.com/jatin.kamboj.37" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 text-gray-300">
                   <Facebook className="w-4 h-4" />
                 </a>
               </div>
@@ -133,13 +133,13 @@ export default function ContactSection() {
           </div>
           
           {/* Contact Form */}
-          <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-100">
-            <h3 className="text-2xl font-semibold text-secondary mb-6">Send Me a Message</h3>
+          <div className="bg-gray-800/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-600">
+            <h3 className="text-2xl font-semibold text-white mb-6">Send Me a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-secondary mb-2">Name</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-white mb-2">Name</label>
                   <Input
                     type="text"
                     id="name"
@@ -151,7 +151,7 @@ export default function ContactSection() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-secondary mb-2">Email</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-white mb-2">Email</label>
                   <Input
                     type="email"
                     id="email"
@@ -165,7 +165,7 @@ export default function ContactSection() {
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-secondary mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">Subject</label>
                 <Input
                   type="text"
                   id="subject"
@@ -178,7 +178,7 @@ export default function ContactSection() {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-secondary mb-2">Message</label>
+                <label htmlFor="message" className="block text-sm font-medium text-white mb-2">Message</label>
                 <Textarea
                   id="message"
                   name="message"

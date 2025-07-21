@@ -34,7 +34,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+    <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-md shadow-lg z-50 border-b border-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold text-gradient">JK</div>
@@ -50,7 +50,7 @@ export default function Navigation() {
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className={`nav-link text-secondary hover:text-primary font-medium ${
+                className={`nav-link text-gray-300 hover:text-primary font-medium ${
                   activeSection === id ? 'active' : ''
                 }`}
               >
@@ -65,16 +65,16 @@ export default function Navigation() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className="w-6 h-6 text-secondary" />
+              <X className="w-6 h-6 text-gray-300" />
             ) : (
-              <Menu className="w-6 h-6 text-secondary" />
+              <Menu className="w-6 h-6 text-gray-300" />
             )}
           </button>
         </div>
         
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-md border-t">
+          <div className="md:hidden bg-black/90 backdrop-blur-md border-t border-gray-800">
             <div className="py-4 space-y-2">
               {[
                 { id: 'home', label: 'Home' },
@@ -85,7 +85,7 @@ export default function Navigation() {
                 <button
                   key={id}
                   onClick={() => scrollToSection(id)}
-                  className="block w-full text-left py-2 text-secondary hover:text-primary font-medium"
+                  className="block w-full text-left py-2 text-gray-300 hover:text-primary font-medium"
                 >
                   {label}
                 </button>
