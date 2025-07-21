@@ -34,7 +34,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold text-gradient">JK</div>
@@ -74,7 +74,7 @@ export default function Navigation() {
         
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t">
+          <div className="md:hidden bg-white/95 backdrop-blur-md border-t">
             <div className="py-4 space-y-2">
               {[
                 { id: 'home', label: 'Home' },

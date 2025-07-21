@@ -26,7 +26,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-neutral">
+    <section id="projects" className="py-20 bg-neutral/90 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-secondary mb-4">Featured Projects</h2>
@@ -38,7 +38,7 @@ export default function ProjectsSection() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-xl overflow-hidden shadow-lg card-hover">
+            <div key={index} className="bg-white/95 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg card-hover border border-gray-100">
               <div className={`h-48 bg-gradient-to-br ${project.gradient}`}></div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-secondary mb-2">{project.title}</h3>
